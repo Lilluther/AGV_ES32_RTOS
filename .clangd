@@ -1,0 +1,3 @@
+CompileFlags:
+  CompilationDatabase: C:\Users\HP\Documents\Firmware\ESP32 PRACTICE PROJECTS\workspace\agv_esp32_firmware\build
+  Remove: [-m*, -f*]

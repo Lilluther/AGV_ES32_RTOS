@@ -1,0 +1,13 @@
+idf_component_register(
+    SRCS 
+        "auto_nav_task.c"
+        "display_task.c"
+        "remote_ir_task.c"
+    INCLUDE_DIRS 
+        "include"
+    REQUIRES 
+        freertos
+        log
+        drivers
+        bluetooth_mgr
+)
