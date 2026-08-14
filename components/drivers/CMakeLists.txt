@@ -9,5 +9,8 @@ idf_component_register(
     INCLUDE_DIRS 
         "include"
     REQUIRES 
-        driver          # ESP-IDF GPIO, LEDC (PWM), and RMT peripherals
+        esp_driver_gpio      # ESP-IDF GPIO, LEDC (PWM), and RMT peripherals
+        esp_timer
+        esp_driver_ledc
+        esp_driver_rmt
 )
