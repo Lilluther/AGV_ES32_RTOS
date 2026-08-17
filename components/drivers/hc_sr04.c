@@ -8,7 +8,7 @@
 
 static const char *TAG = "HC_SR04";
 
-#define HC_SR04_TIMEOUT_US  30000     // 30 ms timeout ( approx 5 meters range)
+#define HC_SR04_TIMEOUT_US  1800     // ~1.8 ms timeout (approx 30 cm max range)
 #define SOUND_SPEED_CM_US   0.0343f   // Speed of sound in cm per microsecond 
 
 esp_err_t hc_sr04_init(const hc_sr04_config_t *config) {
