@@ -47,7 +47,7 @@ esp_err_t ir_receiver_init(const ir_receiver_config_t *config);
  * @brief Reads incoming IR data and resolves it into a mapped command.
  * @param config Pointer to IR receiver configuration structure.
  * @param cmd_out Pointer to store resolved command state.
- * @param timeout_ms Maximum time to wait for an IR signal (0 for non-blocking).
+ * @param timeout_ms Maximum time to wait for an IR signal, can be reset to 0 for non-blocking.
  * @return esp_err_t ESP_OK on valid command, ESP_ERR_TIMEOUT if no command received.
  */
 esp_err_t ir_receiver_read_cmd(const ir_receiver_config_t *config, ir_cmd_state_t *cmd_out, uint32_t timeout_ms);
